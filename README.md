@@ -18,3 +18,20 @@ cd /etc/apache2/vhosts
 
 <sudo> apachectl restart
 ```
+
+## Mapping the virtual domain extension
+
+```
+vi /etc/hosts
+
+127.0.0.1       <domain.name>
+
+dscacheutil -flushcache
+
+```
+## A note about permissions
+
+```
+chmod 755 some/web/directory/
+
+```
